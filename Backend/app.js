@@ -71,15 +71,6 @@ app.get('/retrieve/:name', async(req, res) => {
         }
 });
 
-// async function connect  (){
-//     try {
-//         await sql.connect('Server=AAMINA\\SQLEXPRESS,1433;Database=ImageDB;User Id=AAMINA RIYAZ;Password=asiyadua2')
-
-//     } catch (error) {
-//         console.error(error);
-//     }
-// }
-// connect();
 
 app.get('/', async function (req, res) {
 
