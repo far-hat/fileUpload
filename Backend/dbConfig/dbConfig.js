@@ -1,9 +1,9 @@
 const sql = require('mssql');
 
 var config = {
-    user: 'aamina',
-    password : 'asiyadua2',
-    server: 'AAMINA',
+    user: 'admin',
+    password : 'Incorrect@123',
+    server: 'LAPTOP2',
     database: 'ImageDB',
     port: 1433,
     trustServerCertificate: true
