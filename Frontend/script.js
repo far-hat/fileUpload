@@ -45,8 +45,8 @@ $(document).ready(function(){
             url: `http://localhost:3000/retrieve/${name}`,
             type: 'GET',
             success: function(response) {
-                const imagePath = response.imagePath;
-                $('#retrievedImage').html(`<img src=""http://localhost:3000/${imagePath}" alt="Retrieved Image" />`);
+                const path = response.path;
+                $('#retrievedImage').html(`<img src=""http://localhost:3000/${path}" alt="Retrieved Image" />`);
             },
             error: function(error) {
                 $('#retrievedImage').html(` <p class="error">Image not found</p>`);
