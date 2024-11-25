@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>File Upload</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <h1>Upload Image with Name</h1>
+    <form id="uploadForm"  enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="nameInput" name="name" required/><br><br>
+
+        <label for="File">Choose image:</label>
+        <input type="file" id="fileInput" name="myFile" required/><br>
+        <img id="preview" src="#" alt="Image preview"/><br>
+
+        <div id="message"></div>
+
+        <input type="submit" value="Upload"/>
+    </form>
+
+    <h2>Retrieve Image by Name</h2>
+    <form id="retrieveForm">
+        <label for="retrieveName">Enter Name:</label>
+        <input type="text" name id="retrieveName" required/><br><br>
+        <button type="button" id="retrieveBtn">Retrieve Image</button>
+    </form>
+
+    <div id="retrievedImage"></div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
+
+ 
